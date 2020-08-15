@@ -12,7 +12,7 @@
 
 
 
-<title>2019-之前 | 觉今是而昨非-wuwuzhizhi</title>
+<title>work.1 | 觉今是而昨非-wuwuzhizhi</title>
 
 
 
@@ -107,11 +107,73 @@
             <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">2019-之前</h1>
+            <h1 class="post-title">work.1</h1>
             
                 <div class="post-meta">
                     
@@ -120,7 +182,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">February 23, 2020&nbsp;&nbsp;13:18:50</a>
+                        Date: <a href="#">February 23, 2020&nbsp;&nbsp;14:17:10</a>
                         </span>
                     
                     
@@ -136,26 +198,18 @@
         </header>
 
         <div class="post-content">
-            <img src="/images/《rain》.JPG" alt="《》" style="zoom:25%;" />
+            <p>2017年時候做銅版畫，回想起來那時候狀態很高，無所畏懼的長時間待在實驗室裡，和有毒氣體粉塵作鬥爭。收穫確實很大，好像那才是所謂的「自由時光」。</p>
+<h3 id="nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-戏物"><a href="#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-戏物" class="headerlink" title="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp; &nbsp; 戏物"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp; &nbsp; <strong>戏物</strong></h3><img src="/images/ 2020-02-23 14.19.31.png" style="zoom:50%;" />
 
-<p>·</p>
-<img src="/images/抵抗-.jpg" style="zoom:25%;" />
+<p>·《21岁》25x30</p>
+<img src="/images/ 2020-02-23 14.20.49.png" style="zoom:50%;" />
 
-<p>·</p>
-<img src="/images/抵抗2.jpeg" style="zoom:45%;" />
+<p>·《相同感受》34x30</p>
+<p>·<img src="/images/ 2020-02-23 14.20.09.png" style="zoom:50%;" /></p>
+<p>·《困境》39x26</p>
+<img src="/images/ 2020-02-23 14.19.00.png" style="zoom:50%;" />
 
-<p>·</p>
-<img src="/images/2.gif" style="zoom:90%;" />
-
-<p>·</p>
-<img src="/images/。.jpg" style="zoom:40%;" />
-
-<p>·</p>
-<img src="/images/overlay.JPG" style="zoom:45%;" />
-
-<p>·</p>
-<img src="/images/46x42 .jpg" style="zoom:45%;" />
-
+<p>·《团体》33x30</p>
 
         </div>
 
@@ -187,10 +241,10 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2020/02/23/Artwork-%E7%89%88%E7%94%BB.1/">Artwork-版画.1</a>
+                <a class="prev" rel="prev" href="/2020/02/27/work.2/">work.2</a>
             
             
-            <a class="next" rel="next" href="/2020/02/23/%E6%9C%89%E9%97%9C%E5%9F%8E%E5%B8%82/">有關城市</a>
+            <a class="next" rel="next" href="/2020/02/23/work-2019%E4%B9%8B%E5%89%8D/">work-2019之前</a>
             
         </section>
 
